@@ -8,4 +8,4 @@ Security misconfiguration is commonly a result of insecure default configuration
 
 ---
 ### References
-[1]: https://owasp.org/www-project-top-ten/
+1. https://owasp.org/www-project-top-ten/  [1]:https://owasp.org/www-project-top-ten/
