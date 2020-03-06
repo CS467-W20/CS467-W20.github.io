@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Week 7
+title: Cross-Site Scripting & Using Components with Known Vulnerabilities
 ---
 # Cross-Site Scripting
 Cross-Site scripting is a method of exploitation that injects code whether that be reflected or stored on to a webpage. Stored cross-site scripting attacks grant an adversary the ability to upload malicious code onto a database accessed by the targeted web-application. Once this code is successfully uploaded to the web application, the adversary waits for an unsuspecting user to access the targeted web application andrun the malicious code. This code can allow an adversary to do a variaty of attacks that range from stealing user cookies, to cause users to be redirected to a malicious web application.
