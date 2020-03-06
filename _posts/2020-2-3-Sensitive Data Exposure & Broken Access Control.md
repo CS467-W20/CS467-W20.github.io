@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Week 5
+title: Sensitive Data Exposure & Broken Access Control
 ---
 # Sensitive Data Exposure
 Sensitive data exposure is the process of exploiting a lack of cryptography within a webpage to attain sensitive user information. This can be done due to maintaining a poor API design that can inadvertently cause sensitive data to be exposed to parties who should not have access. Additionally, an adversary can take advantage of a web application that stores user credentials in plaintext or using weak cryptographic algorithms. This will require an ample amount of time researching the proper use of hashing to protect passwords against offline brute-force attacks.
