@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Week 6
+title: Security Misconfiguration 
 ---
 
 # Security Misconfiguration
