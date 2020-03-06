@@ -1,6 +1,6 @@
 ---
 layout: post
-title:SQL Injection & Broken Authentication
+title: SQL Injection & Broken Authentication
 ---
 # SQL Injection
 SQL injection is an attack that takes advantage of improper user validation to exploit the database layer of an application. Additionally, user-supplied data when passed into the database engine without sanitization can cause leakage of secret information and possibly database corruption. This attack will begin by identifying a location in a webpage that has some form of input. At this point, simple SQL commands can be used as input to identify whether the webpage is effectively validating input. If the input is not properly validated, more targeted commands can be run to ultimately have the webpage return sensitive information such as user credentials from the database.
