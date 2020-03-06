@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Week 8
+title: Insecure Deserialization & Insufficient Logging & Monitoring
 ---
 
 # Insecure Deserialization
