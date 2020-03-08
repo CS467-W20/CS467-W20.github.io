@@ -7,7 +7,7 @@ title: Security Misconfiguration
 Security misconfiguration is commonly a result of insecure default configurations, incomplete or ad hoc configurations, open cloud storage, misconfigured HTTP headers, and verbose error messages containing sensitive information. Not only must all operating systems, frameworks, libraries, and applications be securely configured, but they must be patched/upgraded in a timely fashion.<sub>[1]</sub>
 
 ### Exercise
-For this excercise we will be downloading OWASP ZAP, an open source penetration testing tool. Download the appropriate installer from ZAP’s download location at <https://www.zaproxy.org/download/> and execute the installer.
+For this exercise we will be downloading OWASP ZAP, an open source penetration testing tool. Download the appropriate installer from ZAP’s download location at <https://www.zaproxy.org/download/> and execute the installer.
 
 ### DISCLAIMER:    
 > You should only use ZAP to attack an application you have permission to test with an active attack. Because this is a simulation that acts like a real attack, actual damage can be done to a site’s functionality, data, etc. If you are worried about using ZAP, you can prevent it from causing harm (though ZAP’s functionality will be significantly reduced) by switching to safe mode.     
@@ -17,7 +17,7 @@ For this excercise we will be downloading OWASP ZAP, an open source penetration 
 
    ![ZAP Start](/images/Start.JPG)
 
-2. On the welcome scren you will see three options, click on the Automated Scan. 
+2. On the welcome screen you will see three options, click on the Automated Scan. 
 
    ![ZAP Welcome](/images/Welcome.JPG)
    
@@ -44,7 +44,7 @@ ZAP will proceed to crawl the web application with its spider and passively scan
     ![Zap Alert 2](/images/Tokens.JPG) 
     
     **Cookie without SameSite Attribute**  
-    ZAP highlights the piece of code and/or part of the request that has an issue. This along with the Soolution and Reference windows makes it easier to find a solution for each vulnerability.    
+    ZAP highlights the piece of code and/or part of the request that has an issue. This along with the Solution and Reference windows makes it easier to find a solution for each vulnerability.    
     Possible Attack: Cross-Site Request Forgery, Cross-Site Script Inclusion, Timing attacks 
     
     ![Zap Alert 3](/images/cookie.JPG)
@@ -83,7 +83,7 @@ ZAP will proceed to crawl the web application with its spider and passively scan
 
 ### Analysis
 
-This week's excercise shows the importance of penetration testing and how a simple misconfiguration can lead to a major vulnerabilities on our site. 
+This week's exercise shows the importance of penetration testing and how a simple misconfiguration can lead to a major vulnerabilities on our site. 
 
 **X-Frame-Options Header Not Set**     
 > ClickJacking is an attack that occurs when an attacker uses a transparent iframe in a window to trick a user into clicking on a CTA, such as a button or link, to another server in which they have an identical looking window. The attacker in a sense hijacks the clicks meant for the original server and sends them to the other server. This is an attack on both the visitor themselves and on the server.<sub>[3]</sub>   
@@ -91,7 +91,7 @@ This week's excercise shows the importance of penetration testing and how a simp
 **Server Leaks Information via X-Powered-By**    
 > Hackers can exploit known vulnerabilities in Express and Node if they know you’re using it. Express (and other web technologies like PHP) set an X-Powered-By header with every request, indicating what technology powers the server. Express, for example, sets this, which is a dead giveaway that your server is powered by Express.<sub>[4]</sub>     
 
-**Note**: Showing you how to perform a ClickJacking attack and finding known vulnerabilities for Express is out of scope for this excercise.     
+**Note**: Showing you how to perform a ClickJacking attack and finding known vulnerabilities for Express is out of scope for this exercise.     
 
 To enable X-Frame-Options we simply run the npm helmet package (Helmet helps secure Express apps by setting various HTTP headers)    
 ``` npm install helmet --save ```   
