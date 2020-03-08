@@ -52,5 +52,5 @@ Prevent a known vulnerabilities attacks by:
 - Only obtain components from official sources over secure links. Prefer signed packages  to reduce the chance of including malicious  or modified code. 
 
 ### References
-- https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A9-Using_Components_with_Known_Vulnerabilities
-- https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5941
+1. https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A9-Using_Components_with_Known_Vulnerabilities
+2. https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5941
