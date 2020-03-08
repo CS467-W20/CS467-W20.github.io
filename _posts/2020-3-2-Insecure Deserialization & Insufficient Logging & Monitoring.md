@@ -7,10 +7,10 @@ title: Insecure Deserialization & Insufficient Logging & Monitoring
 Serialization is the process where an object is encoded into a byte-stream which can be transferred across a network. It is then de-serialized to recover the object. Depending on the application, serialized objects may include executable instructions or authentication credentials. These serialized objects may be modified by an adversary. If the application is not able to detect tampering, it can allow the adversary to achieve effects like remote code execution or privilege escalation on the server.
 
 We will be exploiting a known vulnerability of node-serialize discussed in last week's post.      
->**Vulnerabiltiy:** Untrusted data passed into unserialize() function in node-serialize module can be exploited to achieve arbitrary code execution by passing a serialized JavaScript Object with an Immediately invoked function expression (IIFE). Specifically the vulnerability in the web app is that it reads a cookie named profile from the HTTP request, perform base64 decode of the cookie value and passes it to unserialize() function. As cookie is an untrusted input, an attacker can craft malicious cookie value to exploit this vulnerability. <sub>[1]</sub>
+>**Vulnerability:** Untrusted data passed into unserialize() function in node-serialize module can be exploited to achieve arbitrary code execution by passing a serialized JavaScript Object with an Immediately invoked function expression (IIFE). Specifically the vulnerability in the web app is that it reads a cookie named profile from the HTTP request, perform base64 decode of the cookie value and passes it to unserialize() function. As cookie is an untrusted input, an attacker can craft malicious cookie value to exploit this vulnerability. <sub>[1]</sub>
 
 ### Exercise 
-**Note:** Since this excercise gains access into the server we are unable to exploit the live vulnerable web app hosted in Heroku as they have added security on their back-end to prevent these kinds of attacks.    
+**Note:** Since this exercise gains access into the server we are unable to exploit the live vulnerable web app hosted in Heroku as they have added security on their back-end to prevent these kinds of attacks.    
 
 1. Setup: 
 - Clone or download https://github.com/ajinabraham/Node.Js-Security-Course.git
