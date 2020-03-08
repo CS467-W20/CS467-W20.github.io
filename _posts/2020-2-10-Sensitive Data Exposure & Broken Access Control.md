@@ -10,14 +10,14 @@ Sensitive data exposure is the process of exploiting a lack of cryptography with
  **Setting up a local instance of the application:**     
  1. Clone repository https://github.com/ashwinsawant/sbr.git to a local directory     
  2. Download a local instance of the SBR Database:     
-         a. Install heroku (sudo apt-get install heroku)     
-         b. Install postgres (sudo apt-get install postgresql)     
-         c. Pull local instance of database with command: heroku pg:pull DATABASE sbr --app sbr2020     
-         d. Access postgres with command: sudo su postgres      
-         e. Enter psql with command: psql     
-         f. Make sure you are in list of foles with comand: \dt      
-             f1. If user does not have role, enter: CREATE ROLE "username" WITH CREATEDB     
-             f2. If user did not have a role, step c might have to be repeated     
+    a. Install heroku (sudo apt-get install heroku)     
+    b. Install postgres (sudo apt-get install postgresql)     
+    c. Pull local instance of database with command: heroku pg:pull DATABASE sbr --app sbr2020     
+    d. Access postgres with command: sudo su postgres      
+    e. Enter psql with command: psql     
+    f. Make sure you are in list of foles with comand: \dt      
+        f1. If user does not have role, enter: CREATE ROLE "username" WITH CREATEDB     
+        f2. If user did not have a role, step c might have to be repeated     
  3. Access cloned directory and begin instance of application with "npm start"
 
 Requirement Tools: Install a tool that allows a user to capture and view packet captures such as tcpdump or Wireshark. For this exercise we will use tcpdump to capture the packets and Wireshark to view the captured packets.
