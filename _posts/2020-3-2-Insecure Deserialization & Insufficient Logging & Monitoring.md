@@ -71,3 +71,4 @@ Monitoring deserialization, alerting if a user deserializes constantly. <sub>[2]
 5. <https://www.yeahhub.com/nodejs-deserialization-attack-detailed-tutorial-2018/>
 
 # Insufficient Logging & Monitoring
+This is different from the rest of the attacks we tried in that it doesn't automatically allow compromise but prevents the host from detecting compromise or attempts at compromising it. For example, we implemented a system where any account gets locked out after a certain number of failed login attempts. However, an attacker trying a single common password against numerous logins will not be detected by this technique because it will only increment the failure counter by one on each account. This attack can be detected by logging and monitoring the number of login attempts from a particular IP address. 
