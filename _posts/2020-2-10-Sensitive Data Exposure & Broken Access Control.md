@@ -50,6 +50,11 @@ Requirement Tools: Install a tool that allows a user to capture and view packet 
 # Broken Access Control
 Broken authentication is a form of vulnerability that an adversary can use to authenticate into a web page and impersonate a legitimate user. This can be done in many ways such as taking advantage of a web application that fails to lock out accounts after multiple failed attempts to brute force a weak password. Adversaries can also use information retrieved from the webpage after a failed login attempts to identify whether a username or password is correct. Improperly handling sessions by allowing users remain logged in for a long period of time despite leaving the computer unattended can enable an adversary to access the user’s session on that computer. Due to the time constraints, the web application did not maintain the functionality to take advantage of broken access control. Instead, this exercise implements XSS do display a user's cookie. With this attack, an adversary can set up a separate application to steal the cookie which can later be used to potentially hijack the user's session. 
 
+
+ **This Exercise Requires Your Browser's Cookies To Be Modified:**
+ Since Heroku.com implements https, your's cookie settings will need to be modified. If you are using chrome, install the extension: EditThisCookie. Once this is running set the following settings for the https://sbr2020.herokuapp.com application. 
+     ![Edit Cookie](/images/cookie/editCookie.JPG)
+
 ### Exercise 
 
 1. Access https://sbr2020.herokuapp.com and login with the following credentials username: user123@gmail.com password: 123user.
