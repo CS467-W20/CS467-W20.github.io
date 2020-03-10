@@ -9,7 +9,7 @@ Cross-Site scripting is a method of exploitation that injects code whether that 
 https://media.oregonstate.edu/media/t/0_d5zn643a
 
 ## Exercise
-For this exercise we will be conducting a stored cross-site scripting attack on https://sbr2020.herokuapp.com. The attack will cause other unsuspecting users to be redirected to a seperate webpage.
+For this exercise we will be conducting a stored cross-site scripting attack on https://sbr2020.herokuapp.com. The attack will cause other unsuspecting users to be redirected to a www.google.com.
 
 1. Access https://sbr2020.herokuapp.com and login with the following credentials username: user123@gmail.com password: 123user.
 
@@ -19,7 +19,7 @@ For this exercise we will be conducting a stored cross-site scripting attack on 
 
  ![Modify_URL](/images/xss/two.JPG)
 
-3. Type the following script: into the input area and save the script into the web application. This will upload the script into the database used to interact with the web application.
+3. Type the following script: ![Script](/images/xss/script.JPG) into the input area and save the script into the web application. This will upload the script into the database used to interact with the web application.
 
  ![Script](/images/xss/three.JPG)
 
@@ -33,7 +33,7 @@ For this exercise we will be conducting a stored cross-site scripting attack on 
 
  ![NormalLsit](/images/xss/five.JPG)
  
-7. You are now redirected to for this example, however, this can easily be a malicious web application owned by an adversary.
+7. You are now redirected to www.google.com for this example, however, this can easily be a malicious web application owned by an adversary.
 
  ![Redirect](/images/xss/six.JPG)
 
