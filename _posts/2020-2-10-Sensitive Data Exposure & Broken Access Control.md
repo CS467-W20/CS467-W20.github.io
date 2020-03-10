@@ -76,7 +76,7 @@ Broken authentication is a form of vulnerability that an adversary can use to au
 
 7. This will cause the user's cookie to be displayed out to the screen. An aversary can potentially use a similar attack to send the user's cookie to a seperate location rather than to the screen. These cookies can later be used to hijack the user's session. 
 
-    ![Unsuspecting User](/images/cookie/Cookie.JPG)
+    ![Unsuspecting User](/images/cookie/cookie.JPG)
 
 
 **[Video Containing Cookie Stealing Example](https://media.oregonstate.edu/media/t/0_kbxg6swk)**
