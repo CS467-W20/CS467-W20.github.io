@@ -54,13 +54,13 @@ Broken authentication is a form of vulnerability that an adversary can use to au
 
 1. Access https://sbr2020.herokuapp.com and login with the following credentials username: user123@gmail.com password: 123user.
 
-    ![Login Page](/images/cookie/login.JPG)
+    ![Login Page](/images/cookie/adversary.JPG)
 
 2. Take advantage of the vulnerable webpage by modifying the URL: https://sbr2020.herokuapp.com/lists to https://sbr2020.herokuapp.com/lists/1. This allows you to access a specific list owned my another unknown user within the web application.
 
     ![Vulnerable Page](/images/cookie/login.JPG)
 
-3. Type the following script into the input area and save the script into the web application. This will upload the script into the database used to interact with the web application.
+3. Type the following: ![Vulnerable Page](/images/cookie/script.JPG) script into the input area and save the script into the web application. This will upload the script into the database used to interact with the web application.
 
     ![Type Script](/images/cookie/scriptInput.JPG)
 
