@@ -15,7 +15,7 @@ SQL injection is an attack that takes advantage of improper user validation to e
 
     ![Todo lists](/images/week4_loggedin.png)
 
-2. Go back to the login page by clicking 'Login' on the navigation bar. Now enter `ash@yahoo.com` for the username and `pass123` for the password and click 'Submit'. As the password is incorrect, you remain on the login page and are not allowed to see the to-do lists.
+2. Go back to the login page by clicking 'Login' on the navigation bar. Now enter `ash@yahoo.com` for the username and `123pass` for the password and click 'Submit'. As the password is incorrect, you remain on the login page and are not allowed to see the to-do lists.
 
     ![Normal login](/images/week4_login.png)
 
@@ -102,7 +102,7 @@ For this exercise you will need to download and install Burp Suite Community Edi
 
    ![Firefox, Proxy Configuration](/images/FirefoxProxy.png)    
 
-5. On Firefox go to our vulnerable website at <http://sbr2020.herokuapp.com/login> and enter the following email and password combination: 
+5. On Firefox go to our vulnerable website at <http://sbr2020sql.herokuapp.com> and enter the following email and password combination: 
       - Email: fake@email.com
       - Password: bogusPass
       - Click the Sign In button  (Do not worry if nothing happens, the next steps are completed on Burp Suite)    
