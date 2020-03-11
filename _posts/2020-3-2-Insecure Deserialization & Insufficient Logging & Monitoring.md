@@ -14,7 +14,58 @@ We will be exploiting a known vulnerability of node-serialize discussed in last 
 
 1. Setup: 
 - Clone or download https://github.com/ajinabraham/Node.Js-Security-Course.git
-- On a seperate folder clone or download https://github.com/ashwinsawant/sbr.git and checkout branch Deserial. Run command 'npm start' to run web app locally on port 3000. 
+- On a seperate folder clone or download https://github.com/ashwinsawant/sbr.git and checkout branch Deserial with 'git checkout Deserial' command.   
+- Download postgresql from https://www.postgresql.org/download/
+- Enter postgresql and run the following commands to create the database.
+``` CREATE DATABASE sbr;
+ \c sbr
+
+CREATE TABLE users (
+uid  SERIAL PRIMARY KEY, 
+email varchar (40) NOT NULL, 
+password varchar (250) NOT NULL, 
+attempts integer DEFAULT 0
+);
+
+INSERT INTO users(email, password)
+VALUES ('cocho@gmail.com', 'password'),
+('ash@yahoo.com', 'pass123'),
+('sal@msn.com', 'qwerty'),
+('user123@gmail.com', '123user'),
+('janedoe@yahoo.com', 'monkey'),
+('jhondoe@hotmail.com', 'dragon');
+
+CREATE TABLE lists (
+lid SERIAL PRIMARY KEY, 
+uid integer, 
+list_name varchar (40),
+FOREIGN KEY (uid) REFERENCES users(uid)
+); 
+
+INSERT INTO lists (uid, list_name)
+VALUES ('1','Groceries'),
+('1','Homework'),
+('2','Errands'),
+('3','Hardware');
+
+CREATE TABLE items (
+iid SERIAL PRIMARY KEY, 
+lid integer, 
+item_name varchar (40),
+FOREIGN KEY (lid) REFERENCES lists(lid)
+); 
+
+INSERT INTO items (lid, item_name)
+VALUES ('1','eggs'),
+('1','apples'),
+('2','Add tables'),
+('2','Populate passwords'),
+('3','Laundry'),
+('3','Vacuum'),
+('4','Hammer'),
+('4','Screw driver');
+```
+- Run command 'npm start' to run web app locally on port 3000. 
 
      ![Local Host](/images/week8_npmStart.JPG)
 
