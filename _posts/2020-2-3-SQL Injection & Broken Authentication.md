@@ -7,7 +7,7 @@ SQL injection is an attack that takes advantage of improper user validation to e
 
 ### Exercise
 
-1. Go to (<http://sbr2020sql.herokuapp.com/>). You will see a login page. Enter `ash@yahoo.com` for the username and `pass123` for the password and click 'Submit'.
+1. Go to <http://sbr2020sql.herokuapp.com/>. You will see a login page. Enter `ash@yahoo.com` for the username and `pass123` for the password and click 'Submit'.
 
     ![Normal login](/images/week4_login.png)
 
