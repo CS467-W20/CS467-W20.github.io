@@ -5,9 +5,6 @@ title: Cross-Site Scripting & Using Components with Known Vulnerabilities
 # Cross-Site Scripting
 Cross-Site scripting is a method of exploitation that injects code whether that be reflected or stored on to a webpage. Stored cross-site scripting attacks grant an adversary the ability to upload malicious code onto a database accessed by the targeted web-application. Once this code is successfully uploaded to the web application, the adversary waits for an unsuspecting user to access the targeted web application and run the malicious code. This code can allow an adversary to do a variety of attacks that range from stealing user cookies, to cause users to be redirected to a malicious web application.
 
-## Video Containing Exercise
-https://media.oregonstate.edu/media/t/0_d5zn643a
-
 ## Exercise
 For this exercise we will be conducting a stored cross-site scripting attack on https://sbr2020.herokuapp.com. The attack will cause other unsuspecting users to be redirected to a www.google.com.
 
@@ -37,6 +34,7 @@ For this exercise we will be conducting a stored cross-site scripting attack on 
 
  ![Redirect](/images/xss/six.JPG)
 
+**[Video of Cross-Site Scripting on Vulnerable Web App](https://media.oregonstate.edu/media/t/0_d5zn643a)**
 
 # Using Components with Known Vulnerabilities
 Using components with known vulnerabilities is one way users and organizations as a whole fall victim to exploitation. Adversaries routinely keep themselves updated with the most up to date vulnerabilities with tools such as CVE (Common Vulnerabilities and Exposures) lists which publish the most recent known vulnerabilities for computing technology. Once a vulnerable technology within a webpage is identified, an adversary can use it to find an avenue to more sensitive or critical information such as user credentials.
