@@ -16,7 +16,8 @@ We will be exploiting a known vulnerability of node-serialize discussed in last 
 - Clone or download https://github.com/ajinabraham/Node.Js-Security-Course.git
 - On a seperate folder clone or download https://github.com/ashwinsawant/sbr.git and checkout branch Deserial with ```git checkout Deserial``` command.   
 - Download postgresql from https://www.postgresql.org/download/
-- Enter postgresql and run the following commands to create the database.
+- Enter postgresql and run the following commands to create the database.     
+
 ``` 
 CREATE DATABASE sbr;
  \c sbr
