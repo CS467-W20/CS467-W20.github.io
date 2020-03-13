@@ -104,12 +104,16 @@ const rateLimiter = require('express-rate-limit');
 const loginLimiter = rateLimiter({
   windowMs: 60 * 1000,
   max: 5,
-  message: 'You have exceeded the 5 login attempts in 1 minute limit!',
-  headers: true
+  headers: true,
+  handler: function (req, res) {
+    console.log("SECURITY WARNING: " + req.ip + " exceeded login rate limit!");
+    res.status(429).send('You have exceeded the 5 login attempts in 1 minute limit!');
+  }
 });
 
 router.use("/login", loginLimiter);
 ```
+
 ### References
 
 1. <https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A10-Insufficient_Logging%252526Monitoring>
