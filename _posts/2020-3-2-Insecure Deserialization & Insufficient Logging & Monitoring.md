@@ -88,7 +88,7 @@ Logging by itself does not prevent attacks. It can allow a detailed post-hoc ana
 
     ![Rate-limit error](/images/week9_error.png)
     
-**[Video of Insecure Deserialization on localhost](https://media.oregonstate.edu/media/t/1_qr42kr4y)**
+**[Video of Monitoring and Loggin Deserialization on Secure Web App](https://media.oregonstate.edu/media/t/1_qr42kr4y)**
 
 ### Analysis
 
